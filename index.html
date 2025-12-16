@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Noto Sans JP", sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+        }
+        
+        .title {
+            font-size: 2rem;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 40px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #333;
+            padding-left: 10px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .sub-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        button {
+            padding: 15px 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: white;
+            width: 100%;
+            text-align: left;
+        }
+        
+        .sub-buttons button {
+            background: linear-gradient(135deg, #a8b5ff 0%, #b8a5d4 100%);
+        }
+        
+        .sub-buttons button:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .main-button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin-bottom: 15px;
+        }
+        
+        .main-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.5);
+        }
+        
+        .main-button:active {
+            transform: translateY(0);
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+            }
+            
+            .title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">膝裏のサイト</h1>
+        
+        <div class="section">
+            <h2 class="section-title">note</h2>
+            <div class="sub-buttons">
+                <form action = "https://note.com/hizaura_"><button>創作料理、レシピ</button></form>
+                <form action = "https://note.com/hizaura_"><button>ブログ</button></form>
+            </div>
+        </div>
+        
+        <form action = "creatingnow.html"><button class="main-button">YouTube</button></form>
+        <form action="https://x.com/OfDaigoro?s=20"><button class="main-button">Twitter</button></form>
+        <form action="creatingnow.html"><button class="main-button">プロフィール</button></form>
+    </div>
+</body>
+</html>
